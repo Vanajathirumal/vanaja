@@ -40,12 +40,3 @@
 # set_a={1:'a',2:'b',3:"c"}
 # result=set_a.items()
 # print(f"{result} of items")
-def length(*words):
-    output={ }
-    for word in words:
-        if word not in output:
-            output[word]=len(word)
-    return output
-    
-print(length('hey','who','are','you'))
-    
