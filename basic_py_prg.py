@@ -40,3 +40,13 @@
 # set_a={1:'a',2:'b',3:"c"}
 # result=set_a.items()
 # print(f"{result} of items")
+
+
+def fillter_dic(**items):
+    for key in items:
+        value=items[key]
+        if type(value) not in (int,float,bool,complex):
+            items.pop(key)
+    return items
+result=fillter_dic(a=20,b=34,c='vanank')
+print(result)
